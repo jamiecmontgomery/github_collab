@@ -31,7 +31,7 @@ suppressPackageStartupMessages({
 In this awesome manuscript, we show that there is a correlation between sepal length and sepal width for three species of *Iris spp.*. The three species are:
 
 ```{r load_data}
-iris <- read.csv(file = here("raw_data", "iris.csv"))
+iris <- read.csv(file = here("data", "iris_four.csv"))
 ```
 
 
