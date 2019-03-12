@@ -49,8 +49,8 @@ Figure \@ref(fig:plot) shows that larger petals are lighter.
 
 ```{r plot, fig.cap = "Relationship between sepal width (gr) and sepal length (cm) for three *Iris spp*."}
 ggplot(data = iris,
-       mapping = aes(x = Sepal.Length, y = Sepal.Width)) +
-  geom_point(mapping = aes(color = Species)) +
+       mapping = aes(x = Sepal.Length, y = Sepal.Width, color = Species)) +
+  geom_point() +
   geom_smooth(method = "lm") +
   ggtheme_plot() +
   labs(x = "Sepal Length (cm)",
